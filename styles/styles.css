@@ -56,12 +56,14 @@ h3 {
 }
 
 footer {
-  background-color: #4400ff5b;
+  background-color: #4400ff;
   color: #9baebc;
   display: flex;
   flex-direction: column;
   justify-content: center;
   align-items: center;
+  position: sticky;
+  bottom: 10px;
 }
 
 /* Estilos header */
