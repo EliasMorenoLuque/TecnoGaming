@@ -1,0 +1,333 @@
+/* Fuente descargada e importada */
+/* @import url('../fonts/Poppins-Regular.ttf'); */
+
+/* Reset de navegadores */
+
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+
+/* Estilos generales */
+
+.h1sn {
+  text-align: center;
+  margin: 15px 0;
+  background-color:#007bff8b;
+  border-radius: 20px 20px 20px 20px;
+  font-family: 'Josefin Sans', sans-serif;
+font-family: 'Young Serif', serif;
+border-top: solid 2px #15151d;
+border-right: solid 2px #15151d;
+border-radius: 5px 5px 5px 5px;
+border-bottom: solid 2px #15151d;
+border-left: solid 2px #15151d;;
+}
+
+
+  
+body {
+  font-family: "Lato", sans-serif;
+  
+  background-image: url("https://imgs.search.brave.com/Lew8gUPxPOndiyXJGV_eEtMmcaKDtuj5D_J8zhqiHAs/rs:fit:860:0:0/g:ce/aHR0cHM6Ly93YWxs/cGFwZXJjYXZlLmNv/bS93cC93cDQzNjQ3/MTguanBn");
+}
+
+ul {
+  list-style-type: none;
+}
+
+ul li {
+  display: inline-block;
+  margin: 10px;
+}
+
+a {
+  text-decoration: none;
+  font-weight: 700;
+  color: #000000;
+}
+
+
+
+
+h3 {
+  text-decoration: underline;
+}
+
+footer {
+  background-color: #4400ff5b;
+  color: #9baebc;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+/* Estilos header */
+
+header {
+  background-color: #00eeffa4;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  height: 90px;
+  padding: 0 10px;
+}
+
+.logo {
+  width: 150px;
+}
+
+/* Estilos main */
+
+.container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: space-evenly;
+  margin: 100px 0px;
+ 
+}
+
+/* Estilos contenido principal */
+
+.title {
+  text-align: center;
+  margin: 30px 0;
+  background-color:#007bff;
+  border-radius: 20px 20px 20px 20px;
+  font-family: 'Josefin Sans', sans-serif;
+font-family: 'Young Serif', serif;
+border-top: solid 2px #15151d;
+border-right: solid 2px #15151d;
+border-radius: 5px 5px 5px 5px;
+border-bottom: solid 2px #15151d;
+border-left: solid 2px #15151d;;
+
+}
+.subtitle {
+  font-family: 'Oswald', sans-serif;
+font-size: 25px;
+}
+.title-text {
+  padding: 10px;
+
+}
+
+.subtitles {
+  font-family: 'Josefin Sans', sans-serif;
+  font-family: 'Young Serif', serif;
+  background-color: #007bff;
+  margin: 15px 0px;
+border-top: solid 2px #15151d;
+border-right: solid 2px #15151d;
+border-radius: 5px 5px 5px 5px;
+border-bottom: solid 2px #15151d;
+border-left: solid 2px #15151d;;
+
+}
+
+
+/* Seccion ultima carrera */
+
+.weekend-info {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+  margin: 15px 0;
+  max-width: 1080px;
+  padding: 5px;
+}
+
+.weekend-img {
+  display: inline-block;
+  max-height: 100%;
+  max-width: 60%;
+}
+
+.weekend-text {
+  text-align: center;
+  width: 100%;
+  height: 100%;
+  margin: 15px;
+  padding: 15px;
+  border-top: solid 3px #15151d;
+  border-right: solid 3px #15151d;
+  border-radius: 0 40px 0 40px;
+  border-bottom: solid 3px #15151d;
+  border-left: solid 3px #15151d;;
+  background-color: rgba(255, 196, 0, 0.888);
+}
+
+.weekend-text p {
+  margin-top: 10px;
+}
+
+/* Seccion novedades */
+.news {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  margin: 15px 50px;
+  
+}
+
+.news-cards {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.img {
+  width: 100%;
+  height: 220px;
+  border-radius: 15px 15px 0px 0px;
+}
+
+.card {
+  width: 350px;
+  border: 1px solid #9baebc;
+  border-radius: 15px 15px 15px 15px;
+  margin: 5px;
+  border-top: solid  #15151d;
+  border-right: solid  #15151d;
+  border-bottom: solid #15151d;
+  border-left: solid  #15151d;;
+  font-family: 'Oswald', sans-serif;
+
+ 
+}
+
+
+.card p, h3, h4 {
+  text-align: center;
+  margin: 5px 3px;
+  text-decoration: none;
+  background-color: rgba(255, 196, 0, 0.888);
+  border-radius: 10%;
+  font-family: 'Oswald', sans-serif;
+
+}
+
+/* Estilos para la seccion de videos */
+
+.iframe-video {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin: 15px 0;
+}
+
+.video {
+  width: 600px;
+  height: 400px;
+}
+
+/* Estilos galeria */
+
+.galeria-grid {
+  display: grid;
+  height: 100vh;
+  grid-template-rows: 90px auto 36px;
+}
+
+.galeria {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  justify-content: center;
+  align-items: center;
+  
+}
+
+.galeria section {
+  width: 450px;
+}
+
+.img-galeria {
+  text-align: center;
+  margin: 5px 3px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 350px;
+  border: 1px solid #9baebc;
+  border-radius: 15px 15px 15px 15px;
+  margin: 5px;
+  border-top: solid  black;
+  border-right: solid  black;
+  border-bottom: solid black;
+  border-left: solid  black;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  margin: 15px 50px;
+}
+
+
+
+
+
+/* Breakpoints para trabajar mediaqueries*/
+/*
+  para telefonos moviles vertical: 480 a 576px
+  para telefonos moviles horizontal: 577px a 767px
+  para tablets: 768px a 1200px
+  para escritorio +1200px
+*/
+
+
+
+
+@media (min-width: 480px) and (max-width: 576px) {
+
+  header {
+    height: auto;
+  }
+
+  ul li {
+    display: block;
+  }
+
+  .title {
+    font-size: 1.8em;
+    padding: 10px;
+  }
+
+  /* White space es una propiedad para que no se separen las palabras que tengamos en un span al momento de hacer saltos de linea */
+
+  /* .no-separar {
+    white-space: nowrap;
+  } */
+
+  .weekend-info {
+    flex-direction: column;
+  }
+
+  .weekend-text {
+    border-top: none;
+    border-right: none;
+    border-bottom: solid 10px #ff1e00;
+    border-left: solid 10px #ff1e00;
+  }
+
+  .weekend-img {
+    max-width: 100%;
+  }
+
+  .news-cards {
+    flex-direction: column;
+  }
+
+  .video {
+    width: 460px;
+  }
+
+  /* Seccion de galeria */
+  .ejemplo-grid {
+    grid-template-rows: 120px auto 36px;
+  }
+}
