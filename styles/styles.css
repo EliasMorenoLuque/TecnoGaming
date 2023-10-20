@@ -1,7 +1,4 @@
-/* Fuente descargada e importada */
-/* @import url('../fonts/Poppins-Regular.ttf'); */
 
-/* Reset de navegadores */
 
 * {
   padding: 0;
@@ -26,11 +23,10 @@ border-left: solid 2px #15151d;;
 }
 
 
-  
 body {
+
   font-family: "Lato", sans-serif;
-  
-  background-image: url("https://imgs.search.brave.com/Lew8gUPxPOndiyXJGV_eEtMmcaKDtuj5D_J8zhqiHAs/rs:fit:860:0:0/g:ce/aHR0cHM6Ly93YWxs/cGFwZXJjYXZlLmNv/bS93cC93cDQzNjQ3/MTguanBn");
+  background-color:cornflowerblue
 }
 
 ul {
@@ -60,22 +56,15 @@ footer {
   color: #9baebc;
   display: flex;
   flex-direction: column;
-  justify-content: center;
+  justify-content: center end;
   align-items: center;
-  position: sticky;
+  position: sticky end;
   bottom: 10px;
 }
 
 /* Estilos header */
 
-header {
-  background-color: #00eeffa4;
-  display: flex;
-  justify-content: space-between;
-  align-items: center;
-  height: 90px;
-  padding: 0 10px;
-}
+
 
 .logo {
   width: 150px;
@@ -88,24 +77,22 @@ header {
   flex-direction: column;
   align-items: center;
   justify-content: space-evenly;
-  margin: 100px 0px;
+
  
 }
 
 /* Estilos contenido principal */
 
 .title {
-  text-align: center;
-  margin: 30px 0;
-  background-color:#007bff;
-  border-radius: 20px 20px 20px 20px;
-  font-family: 'Josefin Sans', sans-serif;
-font-family: 'Young Serif', serif;
-border-top: solid 2px #15151d;
-border-right: solid 2px #15151d;
-border-radius: 5px 5px 5px 5px;
-border-bottom: solid 2px #15151d;
-border-left: solid 2px #15151d;;
+  font-family: 'Oswald', sans-serif;
+  margin-top: 15px;
+  font-size: 24px; 
+  text-align: center; 
+  padding: 10px 20px; 
+  color: #fff; 
+  background: linear-gradient(45deg, #ff6b6b, #556270); 
+  border-radius: 20px; 
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.3); 
 
 }
 .subtitle {
@@ -160,7 +147,7 @@ border-left: solid 2px #15151d;;
   border-radius: 0 40px 0 40px;
   border-bottom: solid 3px #15151d;
   border-left: solid 3px #15151d;;
-  background-color: rgba(255, 196, 0, 0.888);
+  background-color:rgb(77, 118, 194)
 }
 
 .weekend-text p {
@@ -177,7 +164,7 @@ border-left: solid 2px #15151d;;
   
 }
 
-.news-cards {
+.news-cards1 {
   display: flex;
   align-items: center;
   justify-content: center;
@@ -189,29 +176,36 @@ border-left: solid 2px #15151d;;
   border-radius: 15px 15px 0px 0px;
 }
 
-.card {
+.card1 {
   width: 350px;
-  border: 1px solid #9baebc;
-  border-radius: 15px 15px 15px 15px;
-  margin: 5px;
-  border-top: solid  #15151d;
-  border-right: solid  #15151d;
-  border-bottom: solid #15151d;
-  border-left: solid  #15151d;;
-  font-family: 'Oswald', sans-serif;
-
- 
+  border: 2px solid #4f3b74;
+  border-radius: 15px;
+  margin: 10px;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+  transition: transform 0.2s;
 }
 
+.card1:hover {
+  transform: translateY(-5px);
+}
 
-.card p, h3, h4 {
+.card1 p, .card1 h3, .card1 h4 {
   text-align: center;
-  margin: 5px 3px;
+  margin: 3px 1px;
   text-decoration: none;
-  background-color: rgba(255, 196, 0, 0.888);
-  border-radius: 10%;
-  font-family: 'Oswald', sans-serif;
+  background-color: #4f3b74;
+  color: white;
+  font-size: 16px;
+  padding: 10px;
+}
 
+.card1 h3 {
+  font-size: 20px;
+  font-weight: bold;
+}
+
+.card1 h4 {
+  font-size: 18px;
 }
 
 /* Estilos para la seccion de videos */
@@ -299,11 +293,7 @@ border-left: solid 2px #15151d;;
     padding: 10px;
   }
 
-  /* White space es una propiedad para que no se separen las palabras que tengamos en un span al momento de hacer saltos de linea */
-
-  /* .no-separar {
-    white-space: nowrap;
-  } */
+ 
 
   .weekend-info {
     flex-direction: column;
@@ -332,4 +322,61 @@ border-left: solid 2px #15151d;;
   .ejemplo-grid {
     grid-template-rows: 120px auto 36px;
   }
+}
+.carousel {
+  width: 100vh;
+  margin: 0 auto;   
+}
+
+.carousel-item {
+  text-align: center; 
+}
+
+.carousel-item img {
+  max-width: 100%; 
+  height: auto;    
+}
+.carousel-caption h5 {
+  color: black;
+  font-family: 'Oswald', sans-serif;
+  display: inline-block;
+  font-size: 20px;
+  padding: 10px;
+  border-radius: 50px;
+    overflow: hidden;
+  background-color:#4400ffaa
+  
+}
+.navbar {
+  background-color: #3498db; 
+  font-family: 'Lato', sans-serif; 
+  color: #000000;
+  padding: 10px; 
+}
+
+/* Estilos para los enlaces en la barra de navegación */
+.navbar a {
+  color: #000000; 
+  text-decoration: none; 
+  margin: 0 10px; 
+  font-weight: bold; 
+}
+
+
+.navbar a:hover {
+  background-color: #4400ffaa; 
+  border-radius: 5px; 
+  padding: 5px 10px; 
+  transition: 0.3s; 
+}
+
+/* Estilo para el botón de navegación en pantallas pequeñas (Responsive) */
+.navbar-toggler-icon {
+  background-color: #ffffff; 
+}
+
+/* Estilos para el logotipo o imagen del navbar */
+.navbar .logo {
+  width: 50px; 
+  height: auto; 
 }
