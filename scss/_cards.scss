@@ -1,0 +1,160 @@
+.product-cards {
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    gap: 20px;
+  }
+  
+  .card {
+    background-color: #333;
+    color: #fff;
+    border-radius: 10px;
+    padding: 20px;
+    width: 300px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
+    transition: transform 0.2s;
+    
+  }
+  .card:hover {
+    transform: scale(1.05);
+    
+  }
+  .card img {
+    width: 100%;
+    height: 200px;
+    border-radius: 10px;
+    object-fit: cover;
+   
+      
+  }
+  h2.pill-text-gray {
+    display: inline-block;
+    padding: 10px 20px;
+    background: linear-gradient(45deg, #cacaca, #453e3e);
+    color: #000000;
+    border-radius: 20px;
+    font-size: 1.1rem;
+    text-transform: uppercase;
+    
+  }
+
+
+  p {
+    font-size: 1.2rem;
+   
+  }
+  .buy-button {
+    background-color: #007BFF;
+    color: #fff;
+    border: none;
+    border-radius: 5px;
+    padding: 10px 20px;
+    cursor: pointer;
+    
+      
+  }
+  
+  .buy-button:hover {
+    background-color: #0056b3;
+  }
+  
+  
+  
+  
+  
+  .product-grid {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    padding: 20px;
+  }
+  
+  
+  .product-card {
+    width: 300px;
+    background-color: #fff;
+    border: 1px solid #ddd;
+    border-radius: 5px;
+    padding: 20px;
+    margin: 10px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    text-align: center;
+    
+  }
+  .product-card img {
+    max-width: 100%;
+    height: auto;
+    border-radius: 5px;
+    
+      
+  }
+  .product-card h2 {
+    font-size: 18px;
+    margin: 10px 0;
+    
+  }
+  .product-card p {
+    font-size: 14px;
+    color: #777;
+    margin: 10px 0;
+  }
+
+  .price {
+    font-size: 20px;
+    font-weight: bold;
+    color: #0077b5;
+    .buy-button {
+        background-color: #0077b5;
+        color: #fff;
+        border: none;
+        border-radius: 5px;
+        padding: 10px 20px;
+        font-size: 16px;
+        cursor: pointer;
+        transition: background-color 0.2s;
+        .buy-button:hover {
+            background-color: #005580;
+          }
+          
+      }
+  }
+  
+  .galeria-grid {
+    display: grid;
+    height: 100vh;
+    grid-template-rows: 90px auto 36px;
+    .galeria {
+        display: flex;
+        flex-direction: row;
+        flex-wrap: wrap;
+        justify-content: center;
+        align-items: center;
+        .galeria section {
+            width: 450px;
+            .img-galeria {
+                text-align: center;
+                margin: 5px 3px;
+                display: flex;
+                align-items: center;
+                justify-content: center;
+                width: 350px;
+                border: 1px solid #9baebc;
+                border-radius: 15px 15px 15px 15px;
+                margin: 5px;
+                border-top: solid  black;
+                border-right: solid  black;
+                border-bottom: solid black;
+                border-left: solid  black;
+                flex-direction: column;
+                align-items: center;
+                justify-content: center;
+                margin: 15px 50px;
+              }
+          }
+          
+        
+      }
+  }
+  
+
+  

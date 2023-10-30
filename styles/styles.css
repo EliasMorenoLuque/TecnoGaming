@@ -1,174 +1,59 @@
-
-
-* {
-  padding: 0;
-  margin: 0;
-  box-sizing: border-box;
-}
-
-/* Estilos generales */
-
-.h1sn {
-  text-align: center;
-  margin: 15px 0;
-  background-color:#007bff8b;
-  border-radius: 20px 20px 20px 20px;
-  font-family: 'Josefin Sans', sans-serif;
-font-family: 'Young Serif', serif;
-border-top: solid 2px #15151d;
-border-right: solid 2px #15151d;
-border-radius: 5px 5px 5px 5px;
-border-bottom: solid 2px #15151d;
-border-left: solid 2px #15151d;;
-}
-
-
 body {
   margin: 0;
   padding: 0;
   font-family: "Lato", sans-serif;
-  background: linear-gradient(black,rgb(76, 75, 75),black )
+  background: linear-gradient(black, rgb(76, 75, 75), black);
 }
 
 ul {
   list-style-type: none;
 }
-
-ul li {
+ul ul li {
   display: inline-block;
   margin: 10px;
 }
-
-a {
+ul ul li a {
   text-decoration: none;
   font-weight: 700;
   color: #000000;
 }
-
-
-
-
-h3 {
+ul ul li a h3 {
   text-decoration: underline;
 }
 
-footer {
-  background-color: #4400ff;
-  color: #9baebc;
-  display: flex;
-  flex-direction: column;
-  justify-content: center end;
-  align-items: center;
-  position: sticky end;
-  bottom: 10px;
+.h1sn {
+  text-align: center;
+  margin: 15px 0;
+  background-color: rgba(0, 123, 255, 0.5450980392);
+  border-radius: 20px 20px 20px 20px;
+  font-family: "Josefin Sans", sans-serif;
+  font-family: "Young Serif", serif;
+  border-top: solid 2px #15151d;
+  border-right: solid 2px #15151d;
+  border-radius: 5px 5px 5px 5px;
+  border-bottom: solid 2px #15151d;
+  border-left: solid 2px #15151d;
 }
-
-/* Estilos header */
-
-
-
-.logo {
-        max-width: 100%;
-    }
-
-/* Estilos main */
+.h1sn h1 {
+  font-size: 2rem;
+  color: #333;
+  text-transform: uppercase;
+  text-align: center;
+  margin: 20px 0;
+  letter-spacing: 3px;
+  font-family: "Kanit", sans-serif;
+  border-bottom: 2px solid #333;
+  padding-bottom: 10px;
+  background: linear-gradient(rgb(99, 97, 150), rgb(76, 75, 75), rgb(99, 97, 150));
+}
 
 .container {
   display: flex;
-  flex-direction: column;
+  flex-direction: row;
   align-items: center;
   justify-content: space-evenly;
-
- 
 }
 
-/* Estilos contenido principal */
-
-.title {
-  font-family: 'Kanit', sans-serif;
-  margin-top: 15px;
-  font-size: 24px; 
-  text-align: center; 
-  padding: 10px 20px; 
-  color: #000000; 
-  background: linear-gradient(100deg, #ffffff, #545557); 
-  border-radius: 20px; 
-  box-shadow: 0 0 10px rgba(0, 0, 0, 0.3); 
-
-}
-
-
-.title-text {
-  padding: 10px;
-
-}
-
-.subtitles {
-  font-family: 'Kanit', sans-serif;
-  margin-top: 15px;
-  font-size: 24px; 
-  text-align: center; 
-  padding: 10px 20px; 
-  color: #fff; 
-  background: linear-gradient(45deg, #ff6b6b, #556270); 
-  border-radius: 20px; 
-  box-shadow: 0 0 10px rgba(0, 0, 0, 0.3); 
-
-}
-
-
-
-
-
-.weekend-info {
-  background-color: #f5f5f500;
-  padding: 20px;
-  border: 1px solid #2a101000;
-  display: flex;
-  align-items: center;
-}
-
-
-.weekend-img {
-  box-shadow: 0 4px 8px rgba(0, 0, 0, 0);
-  max-width: 300px; 
-  margin-right: 20px; 
-}
-
-
-.weekend-text {
-  flex: 1; 
-}
-
-
-.subtitle {
-  font-size: 24px;
-  color: #000000;
-}
-
-
-.weekend-text p {
-  font-size: 16px;
-  line-height: 1.6;
-}
-
-
-.weekend-info:hover {
-  background-color: #fff;
-  transition: background-color 0.3s ease;
-}
-
-
-
-
-
-
-
-
-/* Seccion novedades */
-
-/* Estilos del contenedor de tarjetas */
-/* Estilos del contenedor de tarjetas */
 .product-cards {
   display: flex;
   justify-content: center;
@@ -207,8 +92,6 @@ h2.pill-text-gray {
   text-transform: uppercase;
 }
 
-
-
 p {
   font-size: 1.2rem;
 }
@@ -226,243 +109,6 @@ p {
   background-color: #0056b3;
 }
 
-
-
-/* Estilos para la seccion de videos */
-
-.iframe-video {
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  margin: 15px 0;
-}
-
-.video {
-  width: 600px;
-  height: 400px;
-}
-
-/* Estilos galeria */
-
-.galeria-grid {
-  display: grid;
-  height: 100vh;
-  grid-template-rows: 90px auto 36px;
-}
-
-.galeria {
-  display: flex;
-  flex-direction: row;
-  flex-wrap: wrap;
-  justify-content: center;
-  align-items: center;
-  
-}
-
-.galeria section {
-  width: 450px;
-}
-
-.img-galeria {
-  text-align: center;
-  margin: 5px 3px;
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  width: 350px;
-  border: 1px solid #9baebc;
-  border-radius: 15px 15px 15px 15px;
-  margin: 5px;
-  border-top: solid  black;
-  border-right: solid  black;
-  border-bottom: solid black;
-  border-left: solid  black;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  margin: 15px 50px;
-}
-
-
-
-
-
-/* Breakpoints para trabajar mediaqueries*/
-/*
-  para telefonos moviles vertical: 480 a 576px
-  para telefonos moviles horizontal: 577px a 767px
-  para tablets: 768px a 1200px
-  para escritorio +1200px
-*/
-
-
-
-
-@media (min-width: 480px) and (max-width: 576px) {
-
-  header {
-    height: auto;
-  }
-
-  ul li {
-    display: block;
-  }
-
-  .title {
-    font-size: 1.8em;
-    padding: 10px;
-  }
-
- 
-
-  .weekend-info {
-    flex-direction: column;
-  }
-
-  .weekend-text {
-    border-top: none;
-    border-right: none;
-    border-bottom: solid 10px #ff1e00;
-    border-left: solid 10px #ff1e00;
-  }
-
-  .weekend-img {
-    max-width: 100%;
-  }
-
-  .news-cards {
-    flex-direction: column;
-  }
-
-  .video {
-    width: 460px;
-  }
-
-  /* Seccion de galeria */
-  .ejemplo-grid {
-    grid-template-rows: 120px auto 36px;
-  }
-}
-.carousel img {
-  max-width: 100%;
-  height: auto;
-}
-.carousel-item {
-  text-align: center; 
-}
-
-.carousel-container {
-  margin: 0;
-  padding: 0;
-}
-
-
-.carousel-item img {
-  max-width: 100%; 
-  height: auto;    
-}
-.carousel-caption h5 {
-  color: black;
-  font-family: 'Oswald', sans-serif;
-  display: inline-block;
-  font-size: 20px;
-  padding: 10px;
-  border-radius: 50px;
-    overflow: hidden;
-  background-color:#4400ffaa
-  
-}
-.navbar  {
-  background-color: #56efbc; 
-  font-family: 'Lato', sans-serif; 
-  color: #000000;
-  padding: 0px; 
-}
-
-/* Estilos para los enlaces en la barra de navegación */
-.navbar a {
-  color: #000000; 
-  text-decoration: none; 
-  margin: 0 10px; 
-  font-weight: bold; 
-}
-
-
-.navbar a:hover {
-  background-color: #4400ffaa; 
-  border-radius: 5px; 
-  padding: 5px 10px; 
-  transition: 0.3s; 
-}
-
-/* Estilo para el botón de navegación en pantallas pequeñas (Responsive) */
-.navbar-toggler-icon {
-  background-color: #ffffff; 
-}
-
-/* Estilos para el logotipo o imagen del navbar */
-.navbar .logo {
-  width: 50px; 
-  height: auto; 
-}
-
-/* Estilos para el footer moderno y minimalista con información de contacto */
-.footer {
-  background-color: #333;
-  color: #fff;
-  padding: 20px 0;
-}
-
-.container {
-  max-width: 1200px;
-  margin: 0 auto;
-  padding: 0 20px;
-}
-
-.footer-content {
-  display: flex;
-  justify-content: space-between;
-  align-items: center;
-  flex-wrap: wrap;
-}
-
-.footer-logo img {
-  max-width: 100px;
-  height: auto;
-}
-
-.footer-links ul {
-  list-style: none;
-  padding: 0;
-}
-
-.footer-links ul li {
-  margin-bottom: 10px;
-}
-
-.footer-links ul li a {
-  color: #fff;
-  text-decoration: none;
-  transition: color 0.2s;
-}
-
-.footer-links ul li a:hover {
-  color: #0077b5; 
-}
-
-.footer-contact {
-  font-size: 14px;
-  margin-top: 20px;
-}
-
-.footer-contact h4 {
-  font-size: 16px;
-  margin-bottom: 10px;
-}
-
-.footer-contact p {
-  margin: 0;
-}/* diseño pagina productos*/
 .product-grid {
   display: flex;
   flex-wrap: wrap;
@@ -470,7 +116,6 @@ p {
   padding: 20px;
 }
 
-/* Estilos para las tarjetas de productos */
 .product-card {
   width: 300px;
   background-color: #fff;
@@ -504,8 +149,7 @@ p {
   font-weight: bold;
   color: #0077b5;
 }
-
-.buy-button {
+.price .buy-button {
   background-color: #0077b5;
   color: #fff;
   border: none;
@@ -515,15 +159,271 @@ p {
   cursor: pointer;
   transition: background-color 0.2s;
 }
-
-.buy-button:hover {
+.price .buy-button .buy-button:hover {
   background-color: #005580;
+}
+
+.galeria-grid {
+  display: grid;
+  height: 100vh;
+  grid-template-rows: 90px auto 36px;
+}
+.galeria-grid .galeria {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  justify-content: center;
+  align-items: center;
+}
+.galeria-grid .galeria .galeria section {
+  width: 450px;
+}
+.galeria-grid .galeria .galeria section .img-galeria {
+  text-align: center;
+  margin: 5px 3px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 350px;
+  border: 1px solid #9baebc;
+  border-radius: 15px 15px 15px 15px;
+  margin: 5px;
+  border-top: solid black;
+  border-right: solid black;
+  border-bottom: solid black;
+  border-left: solid black;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  margin: 15px 50px;
+}
+
+footer {
+  background-color: #4400ff;
+  color: #9baebc;
+  display: flex;
+  flex-direction: column;
+  justify-content: center end;
+  align-items: center;
+  position: sticky end;
+  bottom: 10px;
+}
+
+.iframe-video {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin: 15px 0;
+}
+.iframe-video .video {
+  width: 600px;
+  height: 400px;
+}
+
+.footer {
+  background-color: #333;
+  color: #fff;
+  padding: 20px 0;
+}
+.footer .container {
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 0 20px;
+}
+
+.footer-content {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  flex-wrap: wrap;
+}
+.footer-content .footer-logo img {
+  max-width: 100px;
+  height: auto;
+}
+.footer-content .footer-logo img .footer-links ul {
+  list-style: none;
+  padding: 0;
+}
+
+.footer-links ul li {
+  margin-bottom: 10px;
+}
+.footer-links ul li .footer-links ul li a {
+  color: #fff;
+  text-decoration: none;
+  transition: color 0.2s;
+}
+.footer-links ul li .footer-links ul li a .footer-links ul li a:hover {
+  color: #0077b5;
+}
+.footer-links ul li .footer-links ul li a .footer-links ul li a:hover .footer-contact {
+  font-size: 14px;
+  margin-top: 20px;
+}
+.footer-links ul li .footer-links ul li a .footer-contact h4 {
+  font-size: 16px;
+  margin-bottom: 10px;
+}
+.footer-links ul li .footer-links ul li a .footer-contact h4 .footer-contact p {
+  margin: 0;
+}
+
+.logo {
+  max-width: 100%;
+}
+
+.navbar {
+  background-color: #56efbc;
+  font-family: "Lato", sans-serif;
+  color: #000000;
+  padding: 0px;
+}
+.navbar .navbar a {
+  color: #000000;
+  text-decoration: none;
+  margin: 0 10px;
+  font-weight: bold;
+}
+
+.navbar a:hover {
+  background-color: rgba(68, 0, 255, 0.6666666667);
+  border-radius: 5px;
+  padding: 5px 10px;
+  transition: 0.3s;
+}
+
+.navbar-toggler-icon {
+  background-color: #ffffff;
+}
+
+.navbar .logo {
+  width: 50px;
+  height: auto;
+}
+
+header {
+  height: auto;
+}
+
+@media (min-width: 480px) and (max-width: 576px) {
+  header {
+    height: auto;
+  }
+  ul li {
+    display: block;
+  }
+  .title {
+    font-size: 1.8em;
+    padding: 10px;
+  }
+  .weekend-info {
+    flex-direction: column;
+  }
+  .weekend-text {
+    border-top: none;
+    border-right: none;
+    border-bottom: solid 10px #ff1e00;
+    border-left: solid 10px #ff1e00;
+  }
+  .weekend-img {
+    max-width: 100%;
+  }
+  .news-cards {
+    flex-direction: column;
+  }
+  .video {
+    width: 460px;
+  }
+  /* Seccion de galeria */
+  .ejemplo-grid {
+    grid-template-rows: 120px auto 36px;
+  }
+}
+.title {
+  font-family: "Kanit", sans-serif;
+  margin-top: 15px;
+  font-size: 24px;
+  text-align: center;
+  padding: 10px 20px;
+  color: #000000;
+  background: linear-gradient(100deg, #ffffff, #545557);
+  border-radius: 20px;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.3);
+}
+.title .title-text {
+  padding: 10px;
+}
+.title .title-text .subtitles {
+  font-family: "Kanit", sans-serif;
+  margin-top: 15px;
+  font-size: 24px;
+  text-align: center;
+  padding: 10px 20px;
+  color: #fff;
+  background: linear-gradient(45deg, #ff6b6b, #556270);
+  border-radius: 20px;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.3);
+}
+
+.weekend-info {
+  background-color: rgba(245, 245, 245, 0);
+  padding: 20px;
+  border: 1px solid rgba(42, 16, 16, 0);
+  display: flex;
+  align-items: center;
+}
+.weekend-info .weekend-img {
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0);
+  max-width: 300px;
+  margin-right: 20px;
+}
+.weekend-info .weekend-img .weekend-text {
+  flex: 1;
+}
+.weekend-info .weekend-img .weekend-text .subtitle {
+  font-size: 24px;
+  color: #000000;
+}
+.weekend-info .weekend-img .weekend-text .subtitle .weekend-text p {
+  font-size: 16px;
+  line-height: 1.6;
+}
+.weekend-info .weekend-img .weekend-text .subtitle .weekend-text p .weekend-info:hover {
+  background-color: #fff;
+  transition: background-color 0.3s ease;
+}
+
+.carousel img {
+  max-width: 100%;
+  height: auto;
+}
+.carousel img .carousel-item {
+  text-align: center;
+}
+.carousel img .carousel-item .carousel-container {
+  margin: 0;
+  padding: 0;
+}
+.carousel img .carousel-item .carousel-container .carousel-item img {
+  max-width: 100%;
+  height: auto;
+}
+.carousel img .carousel-item .carousel-container .carousel-item img .carousel-caption h5 {
+  color: black;
+  font-family: "Oswald", sans-serif;
+  display: inline-block;
+  font-size: 20px;
+  padding: 10px;
+  border-radius: 50px;
+  overflow: hidden;
+  background-color: rgba(68, 0, 255, 0.6666666667);
 }
 
 .social-buttons {
   position: fixed;
-  top: 90%; /* Ajusta la posición verticalmente según sea necesario */
-  right: 20px; /* Ajusta la posición horizontalmente según sea necesario */
+  top: 90%;
+  right: 20px;
   transform: translateY(-50%);
 }
 
@@ -531,20 +431,19 @@ p {
   display: block;
   width: 40px;
   height: 40px;
-  background-color: #007BFF; /* Color de fondo */
-  color: #fff; /* Color del ícono */
-  border-radius: 50%; /* Para hacer un botón circular */
+  background-color: #007BFF;
+  color: #fff;
   text-align: center;
-  line-height: 40px; /* Centra verticalmente el ícono */
-  margin-bottom: 10px; /* Espacio entre los botones */
+  line-height: 40px;
+  margin-bottom: 10px;
   text-decoration: none;
   transition: background-color 0.3s;
 }
-
-.social-button i {
+.social-button .social-button i {
   font-size: 20px;
 }
-
-.social-button:hover {
-  background-color: #0056b3; /* Cambia el color de fondo al pasar el mouse */
+.social-button .social-button i .social-button:hover {
+  background-color: #0056b3;
 }
+
+/*# sourceMappingURL=styles.css.map */
