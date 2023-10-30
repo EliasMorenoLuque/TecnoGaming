@@ -2,10 +2,15 @@
 <html lang="en">
 <head>
     <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.0/css/all.min.css">
     <link rel="shortcut icon" href="favicon.ico" type="image/x-icon">
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <style>
+      @import url('https://fonts.googleapis.com/css2?family=Kanit:wght@400;700&display=swap');
+    </style>
     <link href="https://fonts.googleapis.com/css2?family=Lato:wght@400;700&display=swap" rel="stylesheet">
     <style>
         @import url('https://fonts.googleapis.com/css2?family=Oswald:wght@400;500&family=Pixelify+Sans&display=swap');
@@ -37,40 +42,17 @@
                   <li class="nav-item">
                     <a class="nav-link" href="./pages/sobre-nosotros.html">Sobre Nosotros</a>
                   </li>
-                  <li class="nav-item dropdown">
-                    <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
-                      Productos
-                    </a>
-                    <ul class="dropdown-menu">
-                      <li><a class="dropdown-item" href="./pages/productos.html">Componentes</a></li>
-                      <li><a class="dropdown-item" href="./pages/arma tu pc.html">Arma tu pc</a></li>
-                      <li><hr class="dropdown-divider"></li>
-                      <li><a class="dropdown-item" href="#">Something else here</a></li>
-                    </ul>
-                  </li>
                   <li class="nav-item">
-                    <a class="nav-link disabled" >Disabled</a>
+                    <a class="nav-link" href="./pages/productos.html">Productos</a>
                   </li>
                 </ul>
                 <form class="d-flex" role="search">
-                  <input class="form-control me-2" type="search" placeholder="Search" aria-label="Search">
-                  <button class="btn btn-outline-success" type="submit">Search</button>
+                  <input class="form-control me-2" type="search" placeholder="" aria-label="">
+                  <button class="btn btn-outline-success" type="submit">Buscar</button>
                 </form>
               </div>
             </div>
           </nav>
-
-
-        <!-- <nav class="menu">
-            <ul>
-                <li><a href="#">inicio</a></li>
-                <li><a href="./pages/sobre-nosotros.html">Sobre nosotros</a></li>
-                <li><a href="./pages/arma tu pc.html">Armado Pc</a></li>
-                <li><a href="./pages/contacto.html">Contacto</a></li>
-                <li><a href="./pages/ayuda.html">Ayuda</a></li>
-                <li><a href="./pages/productos.html">Productos</a></li>
-            </ul>
-        </nav> -->
     </header>
 
     <div id="carouselExampleCaptions" class="carousel slide">
@@ -83,21 +65,21 @@
           <div class="carousel-item active">
             <img src="./img/nvidiaplaca.jpg" class="d-block w-100" alt="...">
             <div class="carousel-caption d-none d-md-block">
-              <h5>Nvidia Geforce</h5> 
+              <h5 class="title">Nvidia Geforce</h5> 
               <p>Llega al mercado con su nueva tecnologia</p>
             </div>
           </div>
           <div class="carousel-item">
             <img src="./img/msiplacadevideo.png" class="d-block w-100" alt="...">
             <div class="carousel-caption d-none d-md-block">
-              <h5>MSI Graphics</h5>
+              <h5 class="title">MSI Graphics</h5>
               <p>La nueva tecnologia de MSI</p>
             </div>
           </div>
           <div class="carousel-item">
             <img src="./img/nvidiaplaca2.jpg" class="d-block w-100" alt="...">
             <div class="carousel-caption d-none d-md-block">
-              <h5>Nvidia GeForce</h5>
+              <h5 class="title">Nvidia GeForce</h5>
               <p>La nueva placa de Nvidia</p>
             </div>
           </div>
@@ -116,73 +98,177 @@
     <main class="container">
 
 
-        <!-- Titulo principal -->
-        <h1 class="title">Las Últimas Noticias en el Universo de los <span class="no-separar">Componentes</span></h1>
-        <section class="weekend-info">
-            <img src="./img/placa de video 3.jpg" alt="" class="weekend-img">
-            <article class="weekend-text">
-                <h3 class="subtitle">Geforce GTX</h3>
-                <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Pariatur libero id dolorum neque inventore, illum unde sint dolore enim est, doloribus omnis? A sit doloremque hic in assumenda esse necessitatibus excepturi, dolorem voluptate iure odit blanditiis consequuntur illo! Culpa facilis cupiditate reiciendis deleniti aliquid nostrum eos voluptatum aperiam ut magnam.</p>
-            </article>
-        </section>
+       
+      </section>
+      
         <!-- Inicio de seccion de novedades -->
        
 
         <section class="news">
-            <h2 class="subtitles">Novedades</h2>
-            <a href="./pages/memoria ram.html"><article class="news-cards1">
-                <div class="card1">
-                   <img class="img"  src="./img/memoria ram 2.jpg" alt="Memoria Ram"> 
-                    <h3>Memoria Ram ddr5 XPG</h3>
-                    <h4>Caracteristicas</h4>
-                    <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Maiores, at architecto obcaecati qui exercitationem eos iure? Laborum sunt soluta temporibus necessitatibus unde omnis quidem, neque nisi a!</p>
-                </div></a>
+          <h2 class="title">Novedades</h2>
+          <div class="news-cards-container">
+              <!-- Tarjetas de productos -->
+        <div class="product-cards">
+          
+          <div class="card">
+              <img src="./img/nvidiaplaca2.jpg" alt="Producto 1">
+              <h2 class="pill-text-gray">Nvidia Geforce 2060</h2>
+              <p>Precio: $99.99</p>
+              <a href="./pages/productos.html">
+                <button class="buy-button">Añadir al carrito</button>
+            </a>
+          </div>
+
+          
+          <div class="card">
+              <img src="./img/nvidiaplaca.jpg" alt="Producto 2">
+              <h2 class="pill-text-gray">Nvidia Geforce 3060</h2>
+              <p>Precio: $149.99</p>
+              <a href="./pages/productos.html">
+                <button class="buy-button">Añadir al carrito</button>
+            </a>
+          </div>
+
+          
+          <div class="card">
+              <img src="./img/msiplacadevideo.png" alt="Producto 3">
+              <h2 class="pill-text-gray">Placa MSI </h2>
+              <p>Precio: $199.99</p>
+              <a href="./pages/productos.html">
+                <button class="buy-button">Añadir al carrito</button>
+            </a>
+          </div>
+          <div class="product-cards">
+          
+            <div class="card">
+                <img src="./img/Memoria ram 1.jpg" alt="Producto 1">
+                <h2 class="pill-text-gray">Memoria Ram ddr4 2666mhz</h2>
+                <p>Precio: $99.99</p>
+                <a href="./pages/productos.html">
+                  <button class="buy-button">Añadir al carrito</button>
+              </a>
+            </div>
+  
             
-                <div class="card1">
-                    <img class="img" src="./img/memoria ram 3.jpg" alt="Memoria Ram">
-                    <h3>Memoria Ram ddr4 XPG2</h3>
-                    <h4>Caracteristicas</h4>
-                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Facilis assumenda pariatur repudiandae ab eaque, quisquam aspernatur id voluptatibus fugiat. Possimus hic autem nihil saepe explicabo vel.</p>
-                </div>
-                <div class="card1">
-                    <img class="img" src="./img/Memoria ram 1.jpg" alt="Memoria Ram">
-                    <h3>Memoria Ram kingston ddr4 16gb</h3>
-                    <h4>Caracteristicas</h4>
-                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Et aspernatur, numquam vel doloribus iure aut quia voluptate sunt corporis vero sed optio in id unde voluptatibus mollitia commodi necessitatibus ex.</p>
-                </div>
-            </article>
-        </section>
-        <section class="news2">
-            <article class="news-cards1">
-                <div class="card1">
-                    <img class="img" src="./img/image_5-placa-de-video-barata.webp" alt="Placa de video">
-                    <h3>Radeon Gigabyte RX</h3>
-                    <h4>Caracteristicas</h4>
-                    <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Maiores, at architecto obcaecati qui exercitationem eos iure? Laborum sunt soluta temporibus necessitatibus unde omnis quidem, neque nisi a!</p>
-                </div>
-                <div class="card1">
-                    <img class="img" src="./img/procesador 2.jpg" alt="procesador">
-                    <h3>AMD Ryzen 7 y 9</h3>
-                    <h4>Caracteristicas</h4>
-                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Facilis assumenda pariatur repudiandae ab eaque, quisquam aspernatur id voluptatibus fugiat. Possimus hic autem nihil saepe explicabo vel.</p>
-                </div>
-                <div class="card1">
-                    <img class="img" src="./img/procesador 1.jpg" alt="procesador">
-                    <h3>AMD Ryzen 5 1600x</h3>
-                    <h4>Caracteristicas</h4>
-                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Facilis assumenda pariatur repudiandae ab eaque, quisquam aspernatur id voluptatibus fugiat. Possimus hic autem nihil saepe explicabo vel.</p>
-                </div>
-            </article>
-        </section>
-        <!-- Fin de la seccion de novedades, aca podemos crear otra seccion como pueda ser un formulario, una galeria, un video, etc -->
+            <div class="card">
+                <img src="./img/memoria ram 2.jpg" alt="Producto 2">
+                <h2 class="pill-text-gray">Memoria Ram ddr5 1666mhz </h2>
+                <p>Precio: $149.99</p>
+                <a href="./pages/productos.html">
+                  <button class="buy-button">Añadir al carrito</button>
+              </a>
+            </div>
+  
+            
+            <div class="card">
+                <img  src="./img/memoria ram 3.jpg" alt="Producto 3">
+                <h2 class="pill-text-gray">Memoria Ram ddr5 2666mhz</h2>
+                <p>Precio: $199.99</p>
+                <a href="./pages/productos.html">
+                  <button class="buy-button">Añadir al carrito</button>
+              </a>
+            </div>
+
+            <div class="card">
+              <img  src="./img/image_5-placa-de-video-barata.webp" alt="Producto 3">
+              <h2 class="pill-text-gray">Gtx 1060 8gb</h2>
+              <p>Precio: $199.99</p>
+              <a href="./pages/productos.html">
+                <button class="buy-button">Añadir al carrito</button>
+            </a>
+          </div>
+
+          <div class="card">
+            <img  src="./img/tumb_Placa-Video-GeForce-RTX-4080-16Gb-Msi-Ventus-3X-Oc_40845_1.webp" alt="Producto 3">
+            <h2 class="pill-text-gray">GeForce RTX 4080</h2>
+            <p>Precio: $199.99</p>
+            <a href="./pages/productos.html">
+              <button class="buy-button">Añadir al carrito</button>
+          </a>
+          </div>
+
+          <div class="card">
+          <img  src="./img/1019-producto-6500xt-6792.webp" alt="Producto 3">
+          <h2 class="pill-text-gray">Radeon RX6500</h2>
+          <p>Precio: $199.99</p>
+          <a href="./pages/productos.html">
+            <button class="buy-button">Añadir al carrito</button>
+          </a>
+          </div>
+
+       <div class="card">
+        <img  src="./img/memoria ram 3.jpg" alt="Producto 3">
+        <h2 class="pill-text-gray">Gygabite ddr5 2666mhz</h2>
+        <p>Precio: $199.99</p>
+        <a href="./pages/productos.html">
+          <button class="buy-button">Añadir al carrito</button>
+      </a>
+      </div>
+
+    <div class="card">
+      <img  src="./img/tumb_memoria-corsair-rgb-gamer_41134_1.webp" alt="Producto 3">
+      <h2 class="pill-text-gray">Corsair ddr5 2666mhz</h2>
+      <p>Precio: $199.99</p>
+      <a href="./pages/productos.html">
+        <button class="buy-button">Añadir al carrito</button>
+    </a>
+    </div>
+
+    
+    <div class="card">
+      <img  src="./img/c9x-ddr4-vs-ddr5-comparativa-de-rendimiento.webp" alt="Producto 3">
+      <h2 class="pill-text-gray">Trydentz ddr5 2666mhz</h2>
+      <p>Precio: $199.99</p>
+      <a href="./pages/productos.html">
+        <button class="buy-button">Añadir al carrito</button>
+    </a>
+    </div>
+    
+      </section>
+      
+        
         <section class="iframe-video">
-            <h2 class="subtitles">Producto nuevo de la semana</h2>
+            <h2 class="title">Producto nuevo de la semana</h2>
             <iframe width="560" height="315" src="https://www.youtube.com/embed/5xSTMVKSCW4?si=BVhW5fxcYnJq9EjD" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
         </section>
     </main>
-    <footer>
-        <p>Todos los derechos reservados © 2023.</p>
-    </footer>
+    <div class="social-buttons">
+      <a href="https://www.facebook.com/tucuenta" target="_blank" class="social-button">
+        <i class="fab fa-facebook"></i> 
+      </a>
+      <a href="https://twitter.com/tucuenta" target="_blank" class="social-button">
+        <i class="fab fa-twitter"></i> 
+      </a>
+      <a href="https://instagram.com/tucuenta" target="_blank" class="social-button">
+        <i class="fab fa-instagram"></i> 
+      </a>
+     
+    </div>
+    
+    <footer class="footer">
+      <div class="container">
+          <div class="footer-content">
+              <div class="footer-logo">
+                  <img src="./img/ce89735c537159abdee8e3a51ac57fbe-joystick-retro-joystick-negro.webp" alt="Logo de la empresa">
+              </div>
+              <div class="footer-links">
+                  <ul>
+                      <li><a href="./index.html">Inicio</a></li>
+                      <li><a href="./pages/productos.html">Productos</a></li>
+                      <li><a href="./pages/contacto.html">Contacto</a></li>
+                      <li><a href="./pages/sobre-nosotros.html">Acerca de nosotros</a></li>
+                  </ul>
+              </div>
+              <div class="footer-contact">
+                  <h4>Contacto</h4>
+                  <p><strong>Correo:</strong> TecnoGaming@gmail.com</p>
+                  <p><strong>Teléfono:</strong> +3513169734</p>
+              </div>
+          </div>
+      </div>
+  </footer>
+  
+    
     <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.8/dist/umd/popper.min.js" integrity="sha384-I7E8VVD/ismYTF4hNIPjVp/Zjvgyol6VFvRkX/vR+Vc4jQkC+hVqc2pM8ODewa9r" crossorigin="anonymous"></script>
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.min.js" integrity="sha384-BBtl+eGJRgqQAUMxJ7pMwbEyER4l1g+O15P+16Ep7Q9Q+zqX6gSbd85u4mG4QzX+" crossorigin="anonymous"></script>
 </body>
