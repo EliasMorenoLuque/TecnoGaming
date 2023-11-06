@@ -1,79 +1,97 @@
-footer {
-  background-color: #4400ff;
-  color: #9baebc;
-  display: flex;
-  flex-direction: column;
-  justify-content: center end;
-  align-items: center;
-  position: sticky end;
-  bottom: 10px;
-}
-
-
-.iframe-video {
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  margin: 15px 0;
-  .video {
-    width: 600px;
-    height: 400px;
-  }
-}
-
+/* Estilos para el footer */
 .footer {
-  background-color: #333;
-  color: #fff;
-  padding: 20px 0;
-  .container {
-    max-width: 1200px;
-    margin: 0 auto;
-    padding: 0 20px;
-  }
+  background-color: #0a0a0a; /* Fondo oscuro */
+  color: #fff; /* Texto en color claro */
+  padding: 40px 0; /* Espaciado interno */
+  font-family: 'Roboto', sans-serif; /* Fuente moderna */
+  display: flex;
+  justify-content: center;
 }
 
-
-.footer-content {
+/* Estilos para el contenedor principal del footer */
+.footer .footer-content {
   display: flex;
   justify-content: space-between;
   align-items: center;
-  flex-wrap: wrap;
-  .footer-logo img {
-    max-width: 100px;
-    height: auto;
-    .footer-links ul {
-      list-style: none;
-      padding: 0;
-    }
-  }
-  
+  max-width: 1200px; /* Ancho máximo del contenido */
+  margin: 0 auto; /* Centra el contenido horizontalmente */
+}
+
+/* Estilos para el logo en el footer */
+.footer .footer-logo img {
+  max-width: 150px; /* Tamaño máximo del logo */
+  filter: drop-shadow(0px 4px 4px rgba(0, 0, 0, 0.2)); /* Sombra suave */
+}
+
+/* Estilos para los enlaces en el footer */
+.footer .footer-links ul {
+  list-style: none;
+  padding: 0;
+  display: flex;
+}
+
+.footer .footer-links ul li {
+  margin-right: 20px;
+}
+
+.footer .footer-links ul li:last-child {
+  margin-right: 0;
+}
+
+.footer .footer-links ul li a {
+  text-decoration: none;
+  color: #fff;
+  transition: color 0.2s;
+  font-weight: bold;
+}
+
+.footer .footer-links ul li a:hover {
+  color: #ffd700; /* Cambia el color al pasar el mouse */
+}
+
+/* Estilos para la sección de contacto en el footer */
+.footer .footer-contact {
+  text-align: right;
+  padding: 10px;
+}
+
+.footer .footer-contact h4 {
+  margin-bottom: 10px;
+  font-size: 20px; /* Tamaño del título */
+  color: #ffd700; /* Color de título resaltado */
+}
+
+.footer .footer-contact p {
+  margin: 5px 0;
+  color: #aaa; /* Color de texto más claro */
+  font-size: 16px; /* Tamaño de texto */
+}
+
+/* Estilos para el hover general */
+.footer a:hover {
+  text-decoration: underline; /* Subraya los enlaces al pasar el mouse */
 }
 
 
+/* Estilos para la sección de video */
+/* Estilos para el contenedor del video */
+.iframe-video {
+  background-color: #333; /* Fondo oscuro */
+  color: #fff; /* Texto en color claro */
+  padding: 40px;
+  text-align: center;
+}
 
-.footer-links ul li {
-  margin-bottom: 10px;
-  .footer-links ul li a {
-    color: #fff;
-    text-decoration: none;
-    transition: color 0.2s;
-    .footer-links ul li a:hover {
-      color: #0077b5;
-      .footer-contact {
-        font-size: 14px;
-        margin-top: 20px;
-      }
-      
-    }
-    
-    .footer-contact h4 {
-      font-size: 16px;
-      margin-bottom: 10px;
-      .footer-contact p {
-        margin: 0;
-      }
-    }
-    
-  }
-  
+/* Estilos para el título */
+.iframe-video .title {
+  font-size: 28px; /* Aumenta el tamaño del título */
+  margin-bottom: 20px; /* Espaciado inferior */
+}
+
+/* Estilos para el reproductor de video */
+.iframe-video iframe {
+  max-width: 800px; /* Ajusta el ancho máximo del reproductor al tamaño del contenedor */
+  width: 100%; /* Asegura que ocupe todo el ancho disponible */
+  height: 450px; /* Aumenta la altura del reproductor */
+  border: none; /* Elimina el borde alrededor del reproductor */
 }

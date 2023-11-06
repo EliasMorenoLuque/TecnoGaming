@@ -3,6 +3,7 @@
     <head>
         <meta charset="UTF-8">
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <meta name="description" content="Contacto de TecnoGaming|OFICIAL">
         <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.0/css/all.min.css">
         <link rel="shortcut icon" href="favicon.ico" type="image/x-icon">
         <link rel="preconnect" href="https://fonts.googleapis.com">
@@ -24,7 +25,7 @@
     
         <nav class="navbar navbar-expand-lg bg-body-tertiary">
             <div class="container-fluid">
-                <a href="#">
+                <a href="../index.html">
                     <img class="logo" src="../img/ce89735c537159abdee8e3a51ac57fbe-joystick-retro-joystick-negro.webp" alt="logo">
                 </a>
               <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
@@ -33,7 +34,7 @@
               <div class="collapse navbar-collapse" id="navbarSupportedContent">
                 <ul class="navbar-nav me-auto mb-2 mb-lg-0">
                   <li class="nav-item">
-                    <a class="nav-link active" aria-current="page" href="#">Inicio</a>
+                    <a class="nav-link active" aria-current="page" href="../index.html">Inicio</a>
                   </li>
                   <li class="nav-item">
                     <a class="nav-link" href="../pages/sobre-nosotros.html">Sobre Nosotros</a>
@@ -41,6 +42,12 @@
                   <li class="nav-item">
                     <a class="nav-link" href="../pages/productos.html">Productos</a>
                   </li>
+                  <li class="nav-item">
+                    <a class="nav-link" href="../pages/contacto.html">Contacto</a>
+                </li>
+                <li class="nav-item">
+                  <a class="nav-link" href="../pages/arma-tu-pc.html">Arma tu PC</a>
+              </li>
                 </ul>
                 <form class="d-flex" role="search">
                   <input class="form-control me-2" type="search" placeholder="Search" aria-label="Search">
@@ -51,16 +58,29 @@
           </nav>
     </header>
     <main>
-        <h1>Contactate con nosotros</h1>
-        <h2>Dejanos tus comentarios</h2>
-        <form action="../pages/404.html">
-            <input type="text" placeholder="Tu nombre" required>
-            <input type="email" placeholder="Ingresa tu correo electronico" required>
-            <input type="submit">
-            <input type="reset">
-            <textarea name="" id="" cols="15" rows="2">Comentanos tu experiencia!</textarea>
-        </form>
+        <h1 class="title">Contactate con nosotros</h1>
+        <form class="form" action="#" method="post">
+          <label for="nombre">Nombre:</label>
+          <input type="text" id="nombre" name="nombre" required>
+  
+          <label for="email">Correo Electrónico:</label>
+          <input type="email" id="email" name="email" required>
+  
+          <label for="mensaje">Mensaje:</label>
+          <textarea id="mensaje" name="mensaje" rows="4" required>Escribi tus dudas</textarea>
+  
+          <button type="submit">Enviar</button>
+      </form>
+      <h2 class="title">Horario de Atención</h2>
+    <p class="p1">Nuestro equipo de atención al cliente está disponible de lunes a viernes de 9:00 a.m. a 6:00 p.m. y los sábados de 10:00 a.m. a 2:00 p.m.</p>
+
+    <h2 class="title">Devoluciones y Garantías</h2>
+    <p class="p1">Si no está satisfecho con su compra, aceptamos devoluciones en un plazo de 30 días a partir de la fecha de compra. Todos nuestros productos están respaldados por una garantía de 1 año para cualquier defecto de fabricación.</p>
     </main>
+    <main>
+      <h2 class="title">Empresa fundada en plena Cordoba Capital</h2>
+      <iframe class="map" src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d6809.075143886125!2d-64.1897398028874!3d-31.426864442022254!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x9432a28fb8f9010b%3A0xf38e0d8c5a49ab83!2zTnVldmEgQ8OzcmRvYmEsIEPDs3Jkb2Jh!5e0!3m2!1ses-419!2sar!4v1697055756582!5m2!1ses-419!2sar" width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+  </main>
     <footer class="footer">
         <div class="container">
             <div class="footer-content">
@@ -83,5 +103,6 @@
             </div>
         </div>
     </footer>
+   
 </body>
 </html>
